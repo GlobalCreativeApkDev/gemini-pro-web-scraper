@@ -1,3 +1,19 @@
+Metadata-Version: 2.1
+Name: gemini-pro-web-scraper
+Version: 1
+Summary: This package contains implementation of a web scraper with Gemini Pro integrated into it.
+Home-page: https://github.com/GlobalCreativeApkDev/gemini-pro-web-scraper
+Author: GlobalCreativeApkDev
+Author-email: globalcreativeapkdev2022@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # gemini-pro-web-scraper
 
 Ever wondered about scraping a website without running a single line of code? Well, **Gemini Pro Web Scraper** is the

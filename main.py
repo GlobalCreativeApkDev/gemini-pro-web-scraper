@@ -9,6 +9,7 @@ https://oxylabs.io/blog/chatgpt-web-scraping
 
 # Importing necessary libraries
 import google.generativeai as gemini
+import sys
 import os
 from dotenv import load_dotenv
 from mpmath import mp, mpf
@@ -36,6 +37,14 @@ def list_to_words(a_list: list) -> str:
         return str(a_list[0]) + " and " + str(a_list[1])
     else:
         return ", ".join(a_list[:-1]) + ", and " + a_list[-1]
+
+
+def clear():
+    # type: () -> None
+    if sys.platform.startswith('win'):
+        os.system('cls')  # For Windows System
+    else:
+        os.system('clear')  # For Linux System
 
 
 # Creating main function used to run the application.
@@ -110,6 +119,7 @@ def main() -> int:
     ])
 
     while True:
+        clear()
         url: str = input("Please enter the URL of the website you want to scrape: ")
         contents: str = input("What does the URL contain: ")
         elements: list = []  # initial value
@@ -152,7 +162,6 @@ Additional Instructions: Handle character encoding and only include the code in 
 
         convo = model.start_chat(history=[
         ])
-        print("Prompt:\n" + str(prompt))
         convo.send_message(prompt)
         code: str = '\n'.join(str(convo.last.text).split('\n')[1:-1])
         file_name: str = input("Please enter the name of the file you want the code to be in (no extension please): ")

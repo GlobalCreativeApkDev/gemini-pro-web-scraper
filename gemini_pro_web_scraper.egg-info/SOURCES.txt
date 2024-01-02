@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gemini_pro_web_scraper.egg-info/PKG-INFO
+gemini_pro_web_scraper.egg-info/SOURCES.txt
+gemini_pro_web_scraper.egg-info/dependency_links.txt
+gemini_pro_web_scraper.egg-info/entry_points.txt
+gemini_pro_web_scraper.egg-info/top_level.txt
